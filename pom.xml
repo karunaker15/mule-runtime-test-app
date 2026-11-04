@@ -13,8 +13,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.6-java17</app.runtime>
-		<mule.maven.plugin.version>4.1.0</mule.maven.plugin.version>
+		<app.runtime>4.9.23</app.runtime>
+		<mule.maven.plugin.version>4.9.1</mule.maven.plugin.version>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
 		<app.version>${maven.build.timestamp}</app.version>
 		<!-- Cloudhub properties -->
@@ -106,7 +106,9 @@
 							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
 							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
 						</properties>
-					</cloudhub2Deployment>
+					    <javaVersion>17</javaVersion>
+    <releaseChannel>LTS</releaseChannel>
+</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
 					<sharedLibraries/>
 				</configuration>
