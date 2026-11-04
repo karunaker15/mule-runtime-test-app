@@ -80,10 +80,10 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
+					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${app.runtime}</muleVersion>
-						<javaVersion>${cloudhub.java.version}</javaVersion>
+						
 						<username>JenkinsCI</username>
 						<password>J3nkins!</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
@@ -106,7 +106,7 @@
 							<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
 							<anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
 						</properties>
-					</cloudHubDeployment>
+					</cloudhub2Deployment>
 					<classifier>mule-application</classifier>
 					<sharedLibraries/>
 				</configuration>
